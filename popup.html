@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReconForge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-top">
+      <div class="logo-icon">
+        <svg width="22" height="22" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" fill="none" stroke="#00e5ff" stroke-width="5"/>
+          <polygon points="50,18 82,34 82,66 50,82 18,66 18,34" fill="#00e5ff22" stroke="#00e5ff" stroke-width="3"/>
+          <path d="M35 50 L45 62 L65 38" stroke="#00ff88" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <circle cx="50" cy="50" r="6" fill="#00e5ff"/>
+        </svg>
+      </div>
+      <div class="logo-text">Recon<span>Forge</span></div>
+      <span class="version-badge">v3.4</span>
+    </div>
+    <div class="header-sub">Bug Bounty &amp; Pentest Recon Engine</div>
+  </header>
+
+  <main class="main">
+
+    <div class="label">Target Domain</div>
+    <div class="input-wrapper">
+      <span class="input-icon">◈</span>
+      <input type="text" id="domain" placeholder="example.com or www.example.com" autocomplete="off" spellcheck="false">
+    </div>
+    <div id="error" class="error-text"></div>
+
+    <div class="label" style="margin-top: 10px;">Scan Mode</div>
+    <div class="modes-wrapper">
+      <div class="modes">
+        <button class="mode-btn active" data-mode="basic">⬡ Basic</button>
+        <button class="mode-btn" data-mode="advanced">⬡ Advanced</button>
+        <button class="mode-btn" data-mode="aggressive">⬡ Aggressive</button>
+      </div>
+      <div class="mode-desc" id="modeDesc">WHOIS · DNS · Certificate recon · Fast Nmap scan</div>
+      <div class="mode-time time-basic" id="modeTime">⏱ Est. time: ~3–5 min</div>
+    </div>
+
+    <button id="generate">▶ &nbsp;Generate Commands</button>
+
+  </main>
+
+  <section id="outputPanel">
+
+    <div id="statsBar" class="stats-bar" style="display:none;"></div>
+
+    <div class="label">Generated Script</div>
+    <div class="script-header">
+      <div class="script-actions">
+        <button class="action-btn" id="copyScript">⎘ Copy Script</button>
+        <button class="action-btn" id="downloadScript">↓ Download .sh</button>
+      </div>
+    </div>
+    <pre id="scriptOutput"></pre>
+
+    <div class="label">Commands by Category</div>
+    <div id="commands"></div>
+
+  </section>
+
+  <footer class="footer">
+    <span class="footer-text">RECONFORGE · PENTEST EDITION</span>
+    <div class="status-dot"></div>
+  </footer>
+
+  <script src="utils.js"></script>
+  <script src="popup.js"></script>
+
+</body>
+</html>

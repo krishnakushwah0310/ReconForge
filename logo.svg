@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060a0e"/>
+      <stop offset="100%" style="stop-color:#0a1828"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00e5ff"/>
+      <stop offset="100%" style="stop-color:#00ff88"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowStrong">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="200" fill="url(#bgGrad)" rx="12"/>
+  <rect width="800" height="200" fill="none" stroke="#00e5ff22" stroke-width="1" rx="12"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="100" x2="800" y2="100" stroke="#00e5ff08" stroke-width="1"/>
+  <line x1="400" y1="0" x2="400" y2="200" stroke="#00e5ff08" stroke-width="1"/>
+
+  <!-- Hexagon logo mark -->
+  <g transform="translate(60, 100)" filter="url(#glowStrong)">
+    <!-- Outer hex -->
+    <polygon points="0,-52 45,-26 45,26 0,52 -45,26 -45,-26"
+      fill="none" stroke="#00e5ff" stroke-width="2" opacity="0.9"/>
+    <!-- Inner hex -->
+    <polygon points="0,-36 31,-18 31,18 0,36 -31,18 -31,-18"
+      fill="#00e5ff0a" stroke="#00e5ff" stroke-width="1.5" opacity="0.7"/>
+    <!-- Checkmark / forge symbol -->
+    <path d="M-16,0 L-4,14 L18,-14" stroke="#00ff88" stroke-width="5"
+      stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#glow)"/>
+    <!-- Center dot -->
+    <circle cx="0" cy="0" r="4" fill="#00e5ff" opacity="0.8"/>
+    <!-- Corner dots -->
+    <circle cx="0" cy="-52" r="2.5" fill="#00e5ff" opacity="0.6"/>
+    <circle cx="45" cy="-26" r="2.5" fill="#00e5ff" opacity="0.6"/>
+    <circle cx="45" cy="26" r="2.5" fill="#00e5ff" opacity="0.6"/>
+    <circle cx="0" cy="52" r="2.5" fill="#00e5ff" opacity="0.6"/>
+    <circle cx="-45" cy="26" r="2.5" fill="#00e5ff" opacity="0.6"/>
+    <circle cx="-45" cy="-26" r="2.5" fill="#00e5ff" opacity="0.6"/>
+  </g>
+
+  <!-- RECONFORGE text -->
+  <text x="138" y="88" font-family="'Courier New', monospace" font-size="48"
+    font-weight="900" letter-spacing="8" fill="url(#accentGrad)"
+    filter="url(#glow)">RECON</text>
+  <text x="138" y="88" font-family="'Courier New', monospace" font-size="48"
+    font-weight="900" letter-spacing="8" fill="url(#accentGrad)"
+    filter="url(#glowStrong)" opacity="0.4">RECON</text>
+
+  <text x="140" y="140" font-family="'Courier New', monospace" font-size="48"
+    font-weight="900" letter-spacing="8" fill="#e2f0f8">FORGE</text>
+  <text x="140" y="140" font-family="'Courier New', monospace" font-size="48"
+    font-weight="900" letter-spacing="8" fill="#ffffff"
+    opacity="0.05">FORGE</text>
+
+  <!-- Tagline -->
+  <text x="140" y="168" font-family="'Courier New', monospace" font-size="13"
+    letter-spacing="5" fill="#5a7f9a">BUG BOUNTY · PENTEST RECON ENGINE</text>
+
+  <!-- Version badge -->
+  <rect x="618" y="152" width="60" height="20" rx="10"
+    fill="#00e5ff18" stroke="#00e5ff44" stroke-width="1"/>
+  <text x="648" y="166" font-family="'Courier New', monospace" font-size="11"
+    fill="#00e5ff" text-anchor="middle" letter-spacing="1">v3.4</text>
+
+  <!-- Decorative scan line -->
+  <line x1="138" y1="148" x2="750" y2="148" stroke="#00e5ff22" stroke-width="1"/>
+
+  <!-- Right side decoration -->
+  <g transform="translate(750, 100)" opacity="0.3">
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#00e5ff" stroke-width="1" stroke-dasharray="4,4"/>
+    <circle cx="0" cy="0" r="18" fill="none" stroke="#00ff88" stroke-width="1"/>
+    <circle cx="0" cy="0" r="5" fill="#00e5ff"/>
+  </g>
+</svg>
