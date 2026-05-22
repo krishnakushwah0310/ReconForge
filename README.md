@@ -107,9 +107,7 @@ Click the puzzle icon → Pin **ReconForge** for quick access.
 
 ---
 
-## ✨ Features
-
-## ✨ Features
+##  Features
 
 - 3 Recon Modes
 - Auto-generated bash scripts
