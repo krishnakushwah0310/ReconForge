@@ -2,20 +2,9 @@
 
 <img src="logo.svg" alt="ReconForge Logo" width="800"/>
 
-```
-  ██████╗ ███████╗ ██████╗ ██████╗ ███╗   ██╗
-  ██╔══██╗██╔════╝██╔════╝██╔═══██╗████╗  ██║
-  ██████╔╝█████╗  ██║     ██║   ██║██╔██╗ ██║
-  ██╔══██╗██╔══╝  ██║     ██║   ██║██║╚██╗██║
-  ██║  ██║███████╗╚██████╗╚██████╔╝██║ ╚████║
-  ╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝
-              F  O  R  G  E
-```
-
 **Professional Recon Command Generator for Bug Bounty & Penetration Testing**
 
-[![Version](https://img.shields.io/badge/version-v3.4-00e5ff?style=flat-square&logo=git)](https://github.com/yourusername/reconforge)
-[![Manifest](https://img.shields.io/badge/manifest-v3-00ff88?style=flat-square&logo=googlechrome)](https://developer.chrome.com/docs/extensions/mv3/)
+[![Version](https://img.shields.io/badge/version-v3.4-00e5ff?style=flat-square&logo=git)](https://github.com/krishnakushwah0310/ReconForge.git)
 [![Platform](https://img.shields.io/badge/platform-Kali%20Linux-557C94?style=flat-square&logo=kalilinux)](https://www.kali.org/)
 [![License](https://img.shields.io/badge/license-MIT-ff8c00?style=flat-square)](LICENSE)
 
@@ -38,16 +27,16 @@ No more manually typing the same recon commands for every engagement. Select a m
 ```
 ┌─────────────────────────────────────┐
 │  ⚡ ReconForge                  v3.4 │
-│  Bug Bounty & Pentest Recon Engine   │
+│  Bug Bounty & Pentest Recon Engine  │
 ├─────────────────────────────────────┤
-│  Target Domain                       │
-│  ◈ example.com                       │
+│  Target Domain                      │
+│  ◈ example.com                      │
 ├─────────────────────────────────────┤
-│  ⬡ Basic    ⬡ Advanced  ⬡ Aggressive │
-│  WHOIS · DNS · Cert · Fast Nmap      │
-│  ⏱ Est. time: ~3–5 min               │
+│  ⬡ Basic  ⬡ Advanced ⬡ Aggressive  │
+│  WHOIS · DNS · Cert · Fast Nmap     │
+│  ⏱ Est. time: ~3–5 min             │
 ├─────────────────────────────────────┤
-│       ▶  Generate Commands           │
+│       ▶  Generate Commands          │
 └─────────────────────────────────────┘
 ```
 
@@ -58,8 +47,9 @@ No more manually typing the same recon commands for every engagement. Select a m
 ### Step 1 — Clone the repo
 
 ```bash
-git clone https://github.com/yourusername/reconforge.git
-cd reconforge
+git clone https://github.com/krishnakushwah0310/ReconForge.git
+cd ReconForge
+ls -l
 ```
 
 ### Step 2 — Load in Browser
@@ -165,29 +155,6 @@ source ~/.bashrc
 
 echo "[+] All dependencies installed!"
 ```
-
-### Per-Mode Dependency Table
-
-| Tool | Basic | Advanced | Aggressive | Pre-installed Kali? | Install |
-|------|:-----:|:--------:|:----------:|---------------------|---------|
-| `whois` | ✅ | ✅ | ✅ | ✅ Yes | — |
-| `dig` | ✅ | ✅ | ✅ | ✅ Yes | `apt install dnsutils` |
-| `curl` | ✅ | ✅ | ✅ | ✅ Yes | — |
-| `openssl` | ✅ | ✅ | ✅ | ✅ Yes | — |
-| `nmap` | ✅ | ✅ | ✅ | ✅ Yes | — |
-| `jq` | ✅ | ✅ | ✅ | ⚠️ Usually | `apt install jq` |
-| `dnsrecon` | — | ✅ | ✅ | ✅ Yes | — |
-| `whatweb` | — | ✅ | ✅ | ✅ Yes | — |
-| `wafw00f` | — | ✅ | ✅ | ✅ Yes | — |
-| `ffuf` | — | — | ✅ | ✅ Yes | — |
-| `subfinder` | — | ✅ | ✅ | ❌ No | `go install` ↑ |
-| `httpx` | — | ✅ | ✅ | ❌ No | `go install` ↑ |
-| `dnsx` | — | — | ✅ | ❌ No | `go install` ↑ |
-| `nuclei` | — | — | ✅ | ❌ No | `go install` ↑ |
-| `gau` | — | — | ✅ | ❌ No | `go install` ↑ |
-
-> **v3.4 cleanup** — Removed `amass`, `assetfinder`, `feroxbuster`, `gobuster`, `nikto`, `nmap UDP` — `subfinder` covers subdomain enum, `ffuf` covers dir fuzzing, `nuclei` covers vuln scanning. Cleaner, faster, less noise.
-
 ---
 
 ## 📁 Output Structure
@@ -239,7 +206,7 @@ recon_example.com_20250418_142300/
 
 ```
 reconforge/
-├── manifest.json       # Chrome Extension Manifest v3
+├── manifest.json       # Chrome Extension Manifest v4
 ├── popup.html          # Extension UI
 ├── popup.js            # UI controller & event logic
 ├── utils.js            # Command engine — all 3 modes
@@ -280,8 +247,6 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 <div align="center">
 
-**Made for the recon grind. Built by hackers, for hackers.**
-
-`ReconForge v3.4` · Chrome Extension · Manifest v3
+`ReconForge v3.4` 
 
 </div>
