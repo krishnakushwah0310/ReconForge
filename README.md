@@ -18,8 +18,6 @@
 
 No more manually typing the same recon commands for every engagement. Select a mode, enter a domain, get a complete categorized command set + a downloadable `.sh` script that saves all results to organized output files automatically.
 
-> **v3.4** — Duplicate tools removed, stealth improvements, smart domain handling (`www.` auto-strip), tool dependency checks, desktop notifications, and per-mode time estimates.
-
 ---
 
 ## 🖥️ Preview
