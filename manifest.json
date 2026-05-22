@@ -1,5 +1,5 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 4,
   "name": "ReconForge",
   "version": "3.4",
   "description": "Professional recon command generator for bug bounty & penetration testing",
