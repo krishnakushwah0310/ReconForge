@@ -109,20 +109,16 @@ Click the puzzle icon → Pin **ReconForge** for quick access.
 
 ## ✨ Features
 
-- **3 Scan Modes** — Basic, Advanced, Aggressive with scoped command sets
-- **⏱ Time estimates** — shown per mode before you run
-- **Smart domain handling** — `www.` auto-stripped, root domain auto-extracted for WHOIS/DNS
-- **Tool dependency check** — missing tools are detected and skipped gracefully
-- **WHOIS RDAP fallback** — if whois rate-limits, auto-falls back to rdap.org
-- **Category-wise display** — DNS, Certs, Subdomains, Nmap, Tech, Fuzzing, Vulns
-- **Per-command copy button** with checkmark animation
-- **Stats bar** — shows categories, command count, and estimated time
-- **Download `.sh` script** — automated, timestamped output folder
-- **Copy full script** to clipboard in one click
-- **Desktop notification** — `notify-send` fires when scan completes
-- **Domain auto-fill** from active browser tab
-- **Inline error messages** — no `alert()` popups
-- **Zero extension network calls** — all commands run locally on your machine
+## ✨ Features
+
+- 3 Recon Modes
+- Auto-generated bash scripts
+- Nmap, ffuf & nuclei support
+- Subdomain & DNS recon
+- Organized output files
+- One-click command copy
+- Tool dependency checks
+- Local execution
 
 ---
 
